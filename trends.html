@@ -27,7 +27,7 @@
             var param = telemetryMapping[localStorage.selectedparam];           
             var paramheader = nameMapping[param];
             $('#paramHeader').html(paramheader);
-            var url = "https://europe-west3-vaquita-technologies.cloudfunctions.net/veberodpilottelemetry?stationid=" + localStorage.stationid + "&maxlimit=100&param=" + param;            
+            var url = "https://europe-west3-vaquita-technologies.cloudfunctions.net/veberodpilottelemetry?stationid=" + localStorage.stationid + "&maxlimit=1000&param=" + param;            
             $.ajax({
                 url: url,
                 success: function (data, status, xhr) {
