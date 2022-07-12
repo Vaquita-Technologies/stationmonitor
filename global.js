@@ -43,7 +43,7 @@ function GetTelemetryValue(res, param) {
             break;
         case "electricalconductivity":
             var ec = res.ElectricalConductivity.toFixed(2);
-            if (ec>1000) ec = ec/1000; //Temporary fix for demo
+            if (ec>100) ec = ec/1000; //Temporary fix for demo
             // return res.ElectricalConductivity.toFixed(2);
             return ec;
             break;
