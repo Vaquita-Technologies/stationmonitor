@@ -1,7 +1,7 @@
 $(document).ready(function () {   
 
     if (!localStorage.stationid)
-        localStorage.stationid = 17;
+        localStorage.stationid = 125;
         if (!localStorage.param0)
         localStorage.param0 = "batterylevel";
     if (!localStorage.param1)
