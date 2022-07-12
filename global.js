@@ -42,7 +42,10 @@ function GetTelemetryValue(res, param) {
             return res.OxygenDissolved.toFixed(2);
             break;
         case "electricalconductivity":
-            return res.ElectricalConductivity.toFixed(2);
+            var ec = res.ElectricalConductivity.toFixed(2);
+            if (ec>1000) ec = ec/1000; //Temporary fix for demo
+            // return res.ElectricalConductivity.toFixed(2);
+            return ec;
             break;
         case "bga":
             return res.DissolvedSolidsTotal.toFixed(2);
